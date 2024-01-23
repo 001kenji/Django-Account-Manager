@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5j&36%uf$h-h(^-@#po6n)b_n5r6zi&9bh^(9xfpd^39of#6*w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', '.now.sh']
 
 
 # Application definition
@@ -69,8 +69,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ProjectFolder.wsgi.application'
-
+#WSGI_APPLICATION = 'ProjectFolder.wsgi.application'
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -124,9 +124,9 @@ STATIC_URL = 'static/'
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'static'
 # ]
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static')
+# ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
