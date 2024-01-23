@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logged in | {{name}}</title>
+</head>
+<body>
+    <!-- <a name={{name}} href="/user/logOut">
+        <button >log-out</button>
+    </a> -->
+    <form method="POST" action="/user/logOut">
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">log-out</button>
+    </form>
+    <p>you are successfully logged in {{name}}</p>
+
+    
+</body>
+</html>
