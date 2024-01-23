@@ -9,5 +9,8 @@
             "src": "/(.*)",
             "dest": "ProjectFolder/swgi.py"
         }
-    ]
+    ],
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
+      ]
 }
