@@ -10,7 +10,7 @@
 <body>
     <p>Welcome back {{name}} : {{logpassword}}</p>
 
-    <form action="/user/logged" method="post">
+    <form action="/logged" method="post">
         {% csrf_token %}
         <input placeholder="USER-NAME" name="logname" id="" type="text">
         <input placeholder="PASSWORD" name="logpassword" id="" type="password">
